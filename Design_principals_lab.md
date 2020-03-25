@@ -17,3 +17,10 @@ storage of users. Instead this can be done in their respective classes. The test
 indicating that the overall functionality of the class didn't change thus shouldn't affect any  
 code where this class is used.
 
+## Q2c
+The code in the newly refactored classes is much easier to read. Extending from the Subscriber  
+class makes the code in ISPSubscriber and PhoneSubsriber much simpler and creation of new 
+types of subscribers this way would be much easier. This code also provided a level of security 
+as the Subscriber class is locked down from any modifications by being abstract thus no instance 
+of it can be created and used in any other way than inheriting from it and providing new specific
+functionality.
